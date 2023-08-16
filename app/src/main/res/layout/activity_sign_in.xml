@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="35dp"
+    android:background="@color/ActionColor">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:cardElevation="50sp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="45dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/green">
+
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/login_screen"
+                    android:textColor="@color/teal_200"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/heading"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/password_toggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/password" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user"
+                    android:layout_marginTop="20dp"
+                    android:hint="E mail" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="350dp"
+        android:text="@string/submit_button" />
+
+
+</RelativeLayout>

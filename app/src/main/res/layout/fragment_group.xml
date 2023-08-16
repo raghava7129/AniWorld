@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".groupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:id="@+id/rlgrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvgrp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/edit_bar"
+            android:layout_marginBottom="-1dp" />
+
+        <EditText
+            android:id="@+id/edit_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:background="@color/transparent"
+            android:hint="Type message.."
+            android:padding="10sp" />
+
+
+        <ImageButton
+            android:id="@+id/scrollDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send_grp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="353dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/down" />
+
+        <ImageButton
+            android:id="@+id/send_grp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/send_grp"
+            android:padding="10sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#A4B7F1F6"
+    android:padding="2dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setimg"
+        android:layout_width="191dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/img_8" />
+
+    <ImageButton
+        android:id="@+id/gal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setimg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="-41dp"
+        android:src="@drawable/gal"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/imageLoadingProgress"
+        android:layout_width="89dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="236dp"
+        android:indeterminate="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CARDV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setimg"
+        android:layout_marginTop="35dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RELATIVE_VIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Full_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/Full_Name"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/E_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Full_Name"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:padding="5dp"
+                android:text="@string/Mail"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Naam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/Full_Name"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="Raghava" />
+
+            <TextView
+                android:id="@+id/mai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Naam"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/E_mail"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="na@gmail.com" />
+
+            <TextView
+                android:id="@+id/mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/E_mail"
+                android:layout_marginTop="25dp"
+                android:padding="5dp"
+                android:text="@string/mob"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MOBN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mai"
+                android:layout_toRightOf="@+id/mob"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/mob"
+
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="**********" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="47dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+
+        android:background="@drawable/back_icon"
+        app:backgroundTint="#A56348" />
+</RelativeLayout>

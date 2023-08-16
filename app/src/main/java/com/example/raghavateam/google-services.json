@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "268140822362",
+    "project_id": "raghava-team",
+    "storage_bucket": "raghava-team.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268140822362:android:40e2b41eb1ff449725bd63",
+        "android_client_info": {
+          "package_name": "com.example.raghavateam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268140822362-6g113c60th5s139cmmt9uiak74vhqvsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd3S6UKvMugNshwXMgIXYUOzxdWTziSGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268140822362-6g113c60th5s139cmmt9uiak74vhqvsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
